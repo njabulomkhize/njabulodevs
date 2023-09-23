@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Njabulo Mkhize Devs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&family=Pacifico&family=Playfair+Display:wght@700&family=Raleway&family=Shadows+Into+Light&display=swap');
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+       }
+
+
+        body{
+            background-color: black;
+        }
+        .tittle{
+            color: black;
+            text-align: center;
+            
+        }
+        li{
+            list-style: none;
+            line-height: 50px;
+            font-size: 23px;
+        }
+
+        h1{
+            padding: 30px;
+            margin: 0;
+           
+        }
+    
+        h3{
+            font-family: 'Lobster', cursive;
+            font-size: 20px;
+            color: rgb(58, 50, 50);
+            text-align: center;
+            padding-top: 70px;
+            
+        }
+
+        h4{
+          text-align: center;
+          color: rgb(197, 194, 194);
+          font-size: 22px;
+          width: 600px;
+          
+        }
+        div{
+            color: white;
+        }
+        .first-column a{
+        color:whitesmoke;
+        text-decoration: none;
+        font-size: 15px;
+
+       }
+        .wrapper{
+        display: grid;
+        grid-template-columns: 400px 1fr ;
+        background-color: black;
+        width: 100%;
+        height: auto;
+        margin: 0;
+      
+      }
+
+   
+      .first-column{
+        position: relative;
+      }
+      .first-div{
+        position: fixed;
+        background-color: black;
+        width:400px;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+   
+      }
+      .second-column{
+        background-color: aliceblue;
+        height: auto;
+        padding-bottom: 50px;
+      }
+      .second-column p{
+        color: black;
+        
+      }
+      .material-symbols-outlined{
+        margin-right: 10px;
+      }
+      .a-btn:hover{
+        color:rgb(231, 150, 28)
+      }
+
+      .hero{
+        width: 100%;
+        height: 150px;
+        background: url(https://t4.ftcdn.net/jpg/05/72/54/67/360_F_572546714_2mn39TUv2f5Lmg7JRT9yvSkuTJERGyg8.jpg)no-repeat;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+      }
+      .profile-picture{
+        width: 60%;
+        border-radius: 140px;
+        height: 240px;
+        margin: 50px;
+        object-fit: cover;
+       
+      }
+      
+      .deco{
+        color:rgb(231, 150, 28);
+      }
+      .name{
+       width: 100%;
+       max-width: 60%;
+       margin: auto;
+       font-size: 20px;
+      }
+      .nav-buttons li a{
+        transition: 0.3s ease;
+        padding-left: 34px;
+        
+      }
+      .nav-buttons li a:hover{
+        padding-left: 50px;
+        
+      }
+      .defination{
+        padding: 30px;
+        line-height: 25px;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 880px;
+      }
+
+      .text-ban{
+        color: pink;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 900;
+        
+      }
+      .text-ban:hover{
+        text-decoration: underline;
+      }
+
+      .grid-images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 63%;
+        margin: auto;
+        column-gap: 30px;
+        row-gap: 50px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+      }
+
+      .image-grid{
+        max-width: 300px;
+        height: auto;
+        min-height: 250px;
+      }
+
+      .notice{
+        width: 70%;
+        margin: auto;
+        background-color:rgba(230, 228, 228 ,0.30) ;
+        padding: 30px 50px;
+        border-radius: 7px;
+        border: 1px solid red;
+      }
+
+      .visit{
+         text-transform: uppercase;
+         color: green;
+         text-decoration: none;
+         background-color: rgba(200, 191, 191, 0.3);
+         padding: 7px 20px;
+         border-radius: 6px;
+         border: 1px solid black;
+         transition: 0.4s ease;
+         
+      }
+
+      .visit:hover{
+        color: black;
+        border: 2px solid green;
+      }
+
+      .njabulo{
+        width: 90%;
+        height: auto;
+        margin-left: 30px;
+
+      }
+
+      iframe{
+        margin-left: 30px;
+        width: 90%;
+      }
+
+      .chat{
+        margin-left: 40px;
+        margin-bottom: 30px;
+        
+      }
+
+      .chat a{
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+        padding: 17px 25px;
+        border-radius: 4px;
+        
+      }
+
+      .chat a:hover{
+        border: 2px solid grey;
+      }
+
+      .place{
+        max-width: 300px;
+        height: auto;
+        margin-left: 20px;
+        border-radius: 4px;
+      }
+
+      .footer{
+        text-align: center;
+      }
+
+
+      @media(max-width:1140px){
+        .grid-images{
+        display: flex;
+        flex-direction: column;
+        max-width: 75%;
+        margin: auto;
+        column-gap: 30px;
+      }
+
+      .image-grid{
+        max-width: 300px;
+        height: auto;
+        min-height: 300px;
+      }
+
+      .njabulo{
+        width: 80%;
+        height: auto;
+        margin-left: 30px;
+
+      }
+      }
+      @media(max-width:930px){
+        .wrapper{
+        display: grid;
+        grid-template-columns: 300px 1fr ;
+        background-color: black;
+        width: 100%;
+        height: 1000vh;
+        margin: 0;
+      
+      }
+      .first-div{
+        position: fixed;
+        background-color: black;
+        width:300px;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+   
+      }
+
+      .profile-picture{
+        width: 50%;
+
+        height: 150px;
+        margin: 50px;
+        object-fit: cover;
+       
+      }
+
+      .nav-buttons li a{
+        transition: 0.3s ease;
+        padding-left: 15px;
+        
+      }
+      .nav-buttons li a:hover{
+        padding-left: 30px;
+        
+      }
+
+
+      .notice{
+       margin-right: 100px;
+       margin-left: 50px;
+       padding: 30px 20px;
+      }
+
+      iframe{
+        margin-left: 30px;
+        width: 70%;
+      }
+
+
+
+     
+      }
+
+      @media(max-width:830px){
+        .njabulo{
+        width: 60%;
+        height: auto;
+        margin-left: 30px;
+
+      }
+      }
+
+
+
+      @media(max-width:800px){
+        .wrapper{
+        display: grid;
+        grid-template-columns: 220px 1fr ;
+        background-color: black;
+        width: 100%;
+        height: 1000vh;
+        margin: 0;
+      
+      }
+      .first-div{
+        position: fixed;
+        background-color: black;
+        width:220px;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+   
+      }
+
+      .profile-picture{
+        width: 65%;
+        
+        height: 140px;
+        margin: 50px;
+        object-fit: cover;
+       
+      }
+
+      .nav-buttons li a{
+        transition: 0.3s ease;
+        padding-left: 0px;
+        
+      }
+      .nav-buttons li a:hover{
+        padding-left: 10px;
+        
+      }
+
+      .notice{
+       margin-right: 60px;
+       margin-left: 50px;
+       padding: 20px 10px;
+      }
+
+      iframe{
+        margin-left: 30px;
+        max-width: 70%;
+      }
+
+    
+      }
+
+      @media(max-width:799px){
+        .wrapper{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        height: 1000vh;
+        margin: 0;
+      
+      }
+
+      .first-div{
+        position: static;
+        background-color: black;
+        width:400px;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+   
+      }
+
+      .profile-picture{
+        width: 50%;
+        border-radius: 140px;
+        height: 200px;
+        margin: 50px;
+        object-fit: cover;
+       
+      }
+
+      .nav-buttons li a:hover{
+        padding-left: 70px;
+        
+      }
+      }
+
+      @media(max-width:420px){
+        h4{
+          text-align: start;
+          padding-left: 40px;
+        }
+
+        .image-grid{
+        max-width: 250px;
+        height: auto;
+        min-height: 250px;
+      }
+
+      .second-column{
+        background-color: aliceblue;
+        height: auto;
+        padding-bottom: 0px;
+      }
+
+      .footer{
+        text-align: center;
+        font-size: small;
+      }
+
+      .place{
+        max-width: 250px;
+        height: auto;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        border-radius: 6px;
+      }
+      }
+       
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    
+    <div class="first-column">
+        <div class="first-div">
+          <img class="profile-picture" src="profile.jpeg" alt="">
+          <p class="name">Njabu<span class="deco">lo</span> Mkhi<span class="deco">ze</span></p>
+          <ul class="nav-buttons">
+            <li>
+                <a class="a-btn" href="#">
+                    <span class="material-symbols-outlined">
+                call
+                </span> Call Me</a>
+            </li>
+
+            <li>
+                <a class="a-btn" href="">
+                <span class="material-symbols-outlined">
+                menu_book
+                </span> My Site</a>
+            </li>
+            <li>
+                <a class="a-btn" href="">
+                    <span class="material-symbols-outlined">
+                    send
+                    </span> My Socials</a>
+            </li>
+
+            <li>
+                <a class="a-btn" href="">
+                    <span class="material-symbols-outlined">
+                        info
+                        </span>
+                    About Me</a>
+            </li>
+
+            <li>
+                <a class="a-btn" href="">
+                    <span class="material-symbols-outlined">
+                    my_location
+                    </span> Location</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    
+    <div class="second-column">
+      <div class="hero">
+        <h1 class="tittle">Junior Web Developer</h1>
+      </div>
+      <h3>Technics and Requiments</h3>
+      <p class="defination">I am a junior front-end developer with the programming tools HTML and CSS with the capability of Planning , structuring and designing a web page . You know in this carrer most companies are used to <br> <a class="text-ban" href="">building a network</a> i have just the good ideas ,plans and suggestions.</p>
+      
+      <h3>Employment History</h3>
+
+     <div class="grid-images">
+      <div>
+        <img class="image-grid" src="https://img.freepik.com/premium-photo/pink-green-background-with-pink-green-tree-leaves_204916-1616.jpg" alt="">
+      </div>
+      <div>
+        <img class="image-grid" src="https://cdn.wallpapersafari.com/10/29/8GgZl0.jpg" alt="">
+      </div>
+     </div>
+
+      <h3>Projects Done</h3>
+
+      <p class="notice">Please note that some of these projects are not running. i build them in order to show you my work</p>
+
+      <h4>Eccomerce Website</h4>
+
+      <div class="grid-images">
+        <div>
+          <video class="image-grid" src="video.mov" controls >
+           <source src="video.mov" type="video/mov">
+          </video>
+        </div>
+       
+        <div>
+          <a href="about.png"><img class="image-grid" src="about.png" alt=""></a>
+        </div>
+        <div>
+          <a href="footer.png"><img class="image-grid" src="footer.png" alt=""></a>
+        </div>
+        <div>
+          <a href="location.png"><img class="image-grid" src="location.png" alt=""></a>
+        </div>
+       </div>
+
+       <p style="text-align: center; max-width: 45%;"><a href="https://njabulomkhize.github.io/Roselline/" target="_blank" class="visit" >visit</a></p>
+
+       
+         <h4>An Advertiing Platform</h4>
+
+
+
+      <div class="grid-images">
+        <div>
+          <video class="image-grid" src="video-two.mp4" controls loop autoplay>
+           <source src="video-two.mp4" type="video/mov">
+          </video>
+        </div>
+        <div>
+          <a href="mip-one.png"><img class="image-grid" src="mip-one.png" alt=""></a>
+        </div>
+        <div>
+          <a href="mip-two.png"><img class="image-grid" src="mip-two.png" alt=""></a>
+        </div>
+        <div>
+          <a href="mpi-three.png"><img class="image-grid" src="mpi-three.png" alt=""></a>
+        </div>
+       
+       </div>
+
+
+       <h4>Corporate Website</h4>
+
+
+
+       <div class="grid-images">
+         <div>
+           <video class="image-grid" src="video-three.mov" controls loop autoplay>
+            <source src="video-three.mov" type="video/mov">
+           </video>
+         </div>
+         <div>
+           <a href="tech0ne.png"><img class="image-grid" src="tech0ne.png" alt=""></a>
+         </div>
+         <div>
+           <a href="tech-three.png"><img class="image-grid" src="techthree.png" alt=""></a>
+         </div>
+         <div>
+           <a href="tech-two.png"><img class="image-grid" src="tech-two.png" alt=""></a>
+         </div>
+        
+        </div>
+        <p style="text-align: center; max-width: 45%;"><a href="https://njabulomkhize.github.io/techeasy/" target="_blank" class="visit" >visit</a></p>
+
+       <h3>About Me</h3>
+       <img class="njabulo" src="njabulo.png" alt="">
+       <p class="defination">My name is Njabulo Mkhize from south africa in KZN province i live in the city of scottburgh. i am a junior web developer with the primary skills HTML5 and CSS i started web development in the year of 2022/08/07</p>
+
+
+       <h3>Location</h3>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13767.95723237384!2d30.691757999999997!3d-30.379661500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef63a60d7ed15a3%3A0xa40dc3e6651803ea!2sPennington%2C%204184!5e0!3m2!1sen!2sza!4v1695459616368!5m2!1sen!2sza" width="600"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+       <br><br><br>
+       <img class="place" src="https://q-xx.bstatic.com/xdata/images/hotel/max500/274764490.jpg?k=7a9c37519bac17a4aa5f99e17dea32e16f4e24c1a4416a5b6b889d8df053ff64&o=" alt="">
+       <img class="place" src="https://penningtoncw.co.za/images/roadblock.png" alt="">
+       <img class="place" src="https://sncdn.com/imagecache/db/id/817208/420942a.jpg" alt="">
+
+       <h3>Contact</h3>
+       <p class="chat"><a href="https://www.facebook.com/njabulo.nqobani.14">Njaa Buu Llo On Facebook</a></p>
+       <p class="chat"><a href="https://www.instagram.com/njabulo_msani/">njabulo_msani On Instagram</a></p>
+
+       <h3>Sports</h3>
+       <p class="chat">Running or Jogging</p>
+       <p class="chat">Lifting</p>
+       <p class="chat">Cycling</p>
+
+       <footer><p class="footer">All rights reserved</p></footer>
+    </div>
+
+    
+
+</div>
+
+</body>
+</html>
